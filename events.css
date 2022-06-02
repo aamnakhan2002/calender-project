@@ -1,0 +1,146 @@
+body {
+  font-family: "Merriweather", serif;
+  background: linear-gradient(-45deg, #c31432, #3c1053, #e73c7e, #23a6d5);
+  background-size: 500% 500%;
+  animation: gradient 20s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+.nav-bar {
+  padding: 0%;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 12px 20px;
+  overflow: hidden;
+  background-color: #232931;
+}
+
+li {
+  display: inline;
+  padding: 14px 24px;
+}
+
+li a {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 7px;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+li:hover {
+  color: black;
+}
+
+.active {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.ig,
+.fb,
+.tw,
+.yt {
+  color: white;
+}
+
+.icon-tray {
+  background-color: #232931;
+  text-align: right;
+  padding-right: 80px;
+  font-size: 10px;
+}
+.icon {
+  padding: 18px 6px 10px;
+}
+.ig:hover,
+.fb:hover,
+.tw:hover,
+.yt:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+label {
+  width: 100px;
+  color: white;
+  font-weight: 600;
+}
+.label-textarea {
+  position: relative;
+  bottom: 34px;
+}
+.event-head {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: white;
+  text-decoration: underline;
+}
+.form-box {
+  text-align: left;
+  width: 30%;
+  margin: 100px auto;
+  border: 1px solid black;
+  padding: 4%;
+  border-radius: 10px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./bg2.gif");
+  box-shadow: rgb(46, 44, 44) 0 0 10px 2px;
+}
+
+input,
+.select {
+  width: 200px;
+}
+.select {
+  padding: 5px 0;
+}
+.submit {
+  margin-left: 55px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.submit:hover {
+  background-color: rgb(26, 24, 24);
+  color: white;
+  font-weight: 600;
+}

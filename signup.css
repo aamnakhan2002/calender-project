@@ -1,0 +1,160 @@
+body {
+  background: linear-gradient(-45deg, #c31432, #3c1053, #e73c7e, #23a6d5);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+
+  font-family: montserrat;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.row {
+  margin: 0;
+}
+.row-2 {
+  padding: 4% 7%;
+  text-align: center;
+  margin: 0%;
+}
+
+.nav-bar {
+  padding: 0%;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 12px 20px;
+  overflow: hidden;
+  background-color: #232931;
+  font-weight: 600;
+}
+
+li {
+  display: inline;
+  padding: 14px 24px;
+}
+
+li a {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 7px;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+li:hover {
+  color: black;
+}
+
+.active {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.ig,
+.fb,
+.tw,
+.yt {
+  color: white;
+}
+
+.icon-tray {
+  background-color: #232931;
+  text-align: right;
+  padding-right: 80px;
+  font-size: 10px;
+}
+.icon {
+  padding: 18px 6px 10px;
+}
+.ig:hover,
+.fb:hover,
+.tw:hover,
+.yt:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.login-card {
+  padding: 4%;
+  margin: auto;
+  color: black;
+  border-radius: 4%;
+}
+
+.heading {
+  font-family: merriweather;
+  color: black;
+  font-weight: 700;
+}
+
+.heading:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+p {
+  padding-top: 10px;
+  color: black;
+  font-family: montserrat;
+  font-size: 22px;
+  font-weight: 500;
+}
+.form-row {
+  padding: 0%;
+}
+.input-box {
+  margin: 30px 0;
+}
+
+.cont-img {
+  width: 400px;
+}
+
+.forgot {
+  color: rgb(48, 46, 46);
+  text-decoration: underline;
+}
+
+.submit {
+  float: left;
+  padding: 6px 8px;
+  margin-top: 12px;
+}
+.submit:hover {
+  background: linear-gradient(-45deg, #c31432, #3c1053, #e73c7e, #23a6d5);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+}
+.input-col {
+  text-align: left;
+}
+.icon {
+  padding-right: 15px;
+  padding-left: 15px;
+}

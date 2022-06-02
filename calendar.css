@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #393e46;
+  margin-left: 0;
+  margin-right: 0;
+
+  background: linear-gradient(-45deg, #c31432, #3c1053, #e73c7e, #23a6d5);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.top {
+  text-align: center;
+  background-color: black;
+  padding: 7px 0 12px;
+}
+h1 {
+  margin-top: 0;
+}
+.top-heading {
+  font-family: "Merienda One", cursive;
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  display: inline-block;
+  padding-top: 7px;
+}
+.top-heading:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e94057;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+  transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+.top-heading:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.top-heading:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+
+  background: -webkit-linear-gradient(#8a2387, #e94057, #f27121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------------------menu------------------------ */
+.nav-bar {
+  padding: 0%;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 12px 20px;
+  overflow: hidden;
+  background-color: #232931;
+}
+
+li {
+  display: inline;
+  padding: 14px 24px;
+}
+
+li a {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 7px;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+li:hover {
+  color: black;
+}
+
+.active {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.ig,
+.fb,
+.tw,
+.yt {
+  color: white;
+}
+
+.icon-tray {
+  background-color: #232931;
+  text-align: right;
+  padding-right: 80px;
+  font-size: 10px;
+}
+.icon {
+  padding: 18px 6px 10px;
+}
+.ig:hover,
+.fb:hover,
+.tw:hover,
+.yt:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+/* ------------------------calendar--------------------- */
+.card {
+  margin: 70px auto;
+  padding: 0%;
+  box-shadow: 10px 5px 20px black;
+  border-radius: 7%;
+  border: black;
+}
+
+.bg {
+  border-radius: 7% 7% 0 0;
+  width: 288px;
+  height: 216px;
+
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.bg:hover {
+  opacity: 0.5;
+}
+
+.calendar__date {
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.calendar__day {
+  font-family: "merriweather", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: 600;
+  color: #262626;
+  padding: 0%;
+}
+.row {
+  margin: 0%;
+}
+.calendar__number {
+  font-family: "merriweather", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: #262626;
+}
+
+.hov:hover {
+  background-color: #4ecca3;
+  border-radius: 50%;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.sun {
+  color: red;
+}
+.month {
+  font-family: merriweather;
+  font-size: 34px;
+  text-shadow: 2px 2px 2px black;
+  position: absolute;
+  color: white;
+  margin: 15px;
+}
+.special {
+  background-color: #4ecca3;
+  border-radius: 50%;
+}
+
+.prev {
+  width: 100px;
+}
+
+.next {
+  width: 100px;
+}
